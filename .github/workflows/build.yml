@@ -70,7 +70,6 @@ jobs:
           rm build.conf
 
       - name: Upload binaries to release
-        if: endsWith(github.ref,'-bpi') && contains(env.UBOOTVER,'-rc') == false
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
