@@ -219,6 +219,7 @@
 		//pinctrl-names = "default";
 		//pinctrl-0 = <&pcie2_pins>;
 		//status = "disabled";
+		status = "okay";
 
 		phys = <&xphyu3port0 PHY_TYPE_PCIE>;
 		phy-names = "pcie-phy";
@@ -261,6 +262,7 @@
 		//pinctrl-names = "default";
 		//pinctrl-0 = <&pcie3_pins>;
 		//status = "disabled";
+		status = "okay";
 
 		#interrupt-cells = <1>;
 		interrupt-map-mask = <0 0 0 0x7>;
@@ -300,6 +302,7 @@
 		//pinctrl-names = "default";
 		//pinctrl-0 = <&pcie0_pins>;
 		//status = "disabled";
+		status = "okay";
 
 		#interrupt-cells = <1>;
 		interrupt-map-mask = <0 0 0 0x7>;
@@ -339,6 +342,7 @@
 		//pinctrl-names = "default";
 		//pinctrl-0 = <&pcie1_pins>;
 		//status = "disabled";
+		status = "okay";
 
 		#interrupt-cells = <1>;
 		interrupt-map-mask = <0 0 0 0x7>;
@@ -385,6 +389,7 @@
 			clock-names = "ref";
 			#phy-cells = <1>;
 			//mediatek,syscon-type = <&topmisc 0x218 0>;
+			status = "okay";
 		};
 	};
 
