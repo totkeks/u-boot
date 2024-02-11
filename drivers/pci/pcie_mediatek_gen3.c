@@ -253,7 +253,7 @@ static int mtk_pcie_startup_port(struct udevice *dev)
 	/* 100ms timeout value should be enough for Gen1/2 training */
 	err = readl_poll_timeout(pcie->base + PCIE_LINK_STATUS_REG, val,
 				 !!(val & PCIE_PORT_LINKUP),
-				 100 * 1000);
+				 1000 * 1000);
 	if (err) {
 		printf("%s:%s[%d] no card detected\n", __FILE__, __func__, __LINE__);
 		return -ETIMEDOUT;
