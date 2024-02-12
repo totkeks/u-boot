@@ -216,9 +216,8 @@
 			 <&infracfg_ao CK_INFRA_133M_PCIE_CK_P2>;
 		clock-names = "pl_250m", "tl_26m", "peri_26m",
 			      "top_133m";
-		//pinctrl-names = "default";
-		//pinctrl-0 = <&pcie2_pins>;
-		//status = "disabled";
+		pinctrl-names = "default";
+		pinctrl-0 = <&pcie2_pins>;
 		status = "okay";
 
 		phys = <&xphyu3port0 PHY_TYPE_PCIE>;
@@ -259,9 +258,8 @@
 			 <&infracfg_ao CK_INFRA_133M_PCIE_CK_P3>;
 		clock-names = "pl_250m", "tl_26m", "peri_26m",
 			      "top_133m";
-		//pinctrl-names = "default";
-		//pinctrl-0 = <&pcie3_pins>;
-		//status = "disabled";
+		pinctrl-names = "default";
+		pinctrl-0 = <&pcie3_pins>;
 		status = "okay";
 
 		#interrupt-cells = <1>;
@@ -299,10 +297,9 @@
 			 <&infracfg_ao CK_INFRA_133M_PCIE_CK_P0>;
 		clock-names = "pl_250m", "tl_26m", "peri_26m",
 			      "top_133m";
-		//pinctrl-names = "default";
-		//pinctrl-0 = <&pcie0_pins>;
-		status = "disabled";
-		//status = "okay";
+		pinctrl-names = "default";
+		pinctrl-0 = <&pcie0_pins>;
+		status = "okay";
 
 		#interrupt-cells = <1>;
 		interrupt-map-mask = <0 0 0 0x7>;
@@ -339,10 +336,9 @@
 			 <&infracfg_ao CK_INFRA_133M_PCIE_CK_P1>;
 		clock-names = "pl_250m", "tl_26m", "peri_26m",
 			      "top_133m";
-		//pinctrl-names = "default";
-		//pinctrl-0 = <&pcie1_pins>;
-		status = "disabled";
-		//status = "okay";
+		pinctrl-names = "default";
+		pinctrl-0 = <&pcie1_pins>;
+		status = "okay";
 
 		#interrupt-cells = <1>;
 		interrupt-map-mask = <0 0 0 0x7>;
