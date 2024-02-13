@@ -218,7 +218,7 @@
 			      "top_133m";
 		pinctrl-names = "default";
 		pinctrl-0 = <&pcie2_pins>;
-		status = "okay";
+		status = "disabled";
 
 		#interrupt-cells = <1>;
 		interrupt-map-mask = <0 0 0 0x7>;
@@ -299,7 +299,7 @@
 			      "top_133m";
 		pinctrl-names = "default";
 		pinctrl-0 = <&pcie0_pins>;
-		status = "okay";
+		status = "disabled";
 
 		#interrupt-cells = <1>;
 		interrupt-map-mask = <0 0 0 0x7>;
@@ -338,7 +338,7 @@
 			      "top_133m";
 		pinctrl-names = "default";
 		pinctrl-0 = <&pcie1_pins>;
-		status = "okay";
+		status = "disabled";
 
 		#interrupt-cells = <1>;
 		interrupt-map-mask = <0 0 0 0x7>;
